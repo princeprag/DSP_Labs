@@ -14,3 +14,7 @@ plot(out);
 subplot(2,1,2);
 plot(yconv);
 
+% Two N-point DFT + One N-point inverse DFT = 3*(Nlog(N)/2)
+% now product of two DFTs = N operations
+% Total complex multiplications= 3*(Nlog(N)/2)+N
+% so, total real multiplications= 4*(3*(Nlog(N)/2)+N)= 6Nlog(N)+4N

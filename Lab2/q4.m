@@ -10,8 +10,10 @@ for p=1:4
     figure();
     subplot(2,1,1);
     stem(x);
+    title("Impulse Train with period T="+p);
     subplot(2,1,2);
     stem(y);
+    title("Resultant vector after convolution");
 end
 
 function m=ImpTrain(T)
